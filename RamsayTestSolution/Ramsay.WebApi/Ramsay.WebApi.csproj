@@ -4,5 +4,10 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Ramsay.DataAccess\Ramsay.DataAccess.csproj" />
+    <ProjectReference Include="..\Ramsay.UnitOfWork\Ramsay.UnitOfWork.csproj" />
+  </ItemGroup>
+
 
 </Project>

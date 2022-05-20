@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Ramsay.Models\Ramsay.Models.csproj" />
+  </ItemGroup>
+
 </Project>

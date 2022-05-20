@@ -1,7 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ramsay.Models\Ramsay.Models.csproj" />
+    <ProjectReference Include="..\Ramsay.Repositories\Ramsay.Repositories.csproj" />
+  </ItemGroup>
 
 </Project>
