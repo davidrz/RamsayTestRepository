@@ -57,12 +57,12 @@ namespace Ramsay.WebApi.Controllers
         }
 
         [HttpDelete]
-        [Route("DeleteStudent")]
-        public IActionResult DeleteStudent([FromBody] Student student)
+        [Route("DeleteStudent/{id}")]
+        public IActionResult DeleteStudent(int id)
         {
-            if (student.Id > 0)
+            if (id > 0)
             {
-                _unitOfWork.Student.Delete(student);
+                _unitOfWork.Student.DeleteStudent(id);
                 return Ok(new { Message = "The Student is Deleted" });
             }
 
